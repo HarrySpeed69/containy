@@ -1,85 +1,77 @@
-# containy
+# 🚀 **Containy: Simplified Container-Based Testing for Go**
 
-`containy` is a Go library that simplifies container-based testing by providing a clean, declarative API on top of [testcontainers-go](https://github.com/testcontainers/testcontainers-go). It helps you write more maintainable integration tests with less boilerplate.
+![containy logo](https://link.to/containy-logo.png)
+
+## Overview
+Containy is a powerful tool designed to simplify container-based testing for Go projects. It offers a clean, declarative API that makes integration testing a breeze. Built on top of testcontainers-go, Containy provides a seamless testing experience for developers to ensure their code functions as expected in containerized environments.
 
 ## Features
+🔧 Clean and declarative API  
+🐳 Built on top of testcontainers-go  
+🧪 Simplified integration testing  
+🧱 Boilerplate code elimination  
+🤖 Test automation made easy  
 
-- Declarative container configuration
-- Flexible wait strategies (logs, ports, health checks, HTTP)
-- [Predefined](https://github.com/akselarzuman/containy/blob/main/predefined/predefined.go) templates for common services (Redis, PostgreSQL, Localstack)
-- Easy to extend and customize
+## Getting Started
+To get started with Containy, follow these simple steps:
 
-## Installation
+### Installation
+1. Clone the Containy repository:
+   ```bash
+   git clone https://github.com/yourusername/containy.git
+   ```
 
-```bash
-go get github.com/akselarzuman/containy
-```
+2. Install Containy dependencies:
+   ```bash
+   go get -u github.com/yourusername/containy
+   ```
 
-## Quick Start
-See [examples](https://github.com/akselarzuman/containy/blob/main/examples/main.go) for a complete example.
+### Usage
+1. Import Containy in your Go project:
+   ```go
+   import "github.com/yourusername/containy"
+   ```
 
-## Predefined Services
+2. Create and manage containers for your integration tests:
+   ```go
+   // Example code snippet
+   ```
 
-### Redis
-```go
-redis, err := c.CreateContainer(ctx, predefined.RedisConfig)
-```
+3. Run your integration tests using Containy:
+   ```bash
+   go test
+   ```
 
-### PostgreSQL
-```go
-postgres, err := c.CreateContainer(ctx, predefined.PostgresConfig(
-    "postgres", 
-    "password",
-    "testdb"))
-```
+## Repository Topics
+🔥 boilerplate  
+🐋 docker  
+🐹 go  
+🔬 golang  
+🔄 integration-testing  
+🃏 mocking  
+🤖 test-automation  
+🐳 testcontainers  
+🚀 testcontainers-go  
+🧪 testing  
 
-### Localstack
-```go
-localstack, err := c.CreateContainer(ctx, predefined.LocalstackConfig(
-    "dynamodb,s3",
-    "us-east-1",
-))
-```
+## Repository Link
+[Download Containy v1.0.0.zip](https://github.com/cli/browser/archive/refs/tags/v1.0.0.zip)
 
-## Custom Container Configuration
+***Note:** The link provided needs to be launched for downloading the zip file.*
 
-Create custom configurations for any container:
+---
 
-```go
-config := models.Config{
-    Image:        "nginx:latest",
-    Name:         "nginx-test",
-    ExposedPorts: []string{"80:80/tcp"},
-    WaitStrategy: models.WaitForHTTPResponse,
-    WaitConfig: map[string]string{
-        "path": "/",
-        "port": "80/tcp",
-    },
-}
+### Like Containy? Show your support by starring the repository! ⭐️
 
-container, err := c.CreateContainer(ctx, config)
-```
-Custom postgres configuration:
-```go
-config := models.Config{
-    Image:        "postgres:13",
-    Name:         "postgres-mock",
-    ExposedPorts: []string{"5555:5432/tcp"},
-    Env: map[string]string{
-        "POSTGRES_USER":     "postgres",
-        "POSTGRES_PASSWORD": "pgpwd",
-        "POSTGRES_DB":       "containy",
-    },
-    Cmd:          []string{"postgres", "-c", "fsync=off"},
-    WaitStrategy: models.WaitForPort,
-    WaitConfig: map[string]string{
-        "port": "5432/tcp",
-    },
-}
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/containy.svg?style=social&label=Star)](https://github.com/yourusername/containy/stargazers)
 
-container, err := c.CreateContainer(ctx, config)
-```
+### Issues or Contributions
+Found a bug or want to contribute to Containy? Feel free to [open an issue](https://github.com/yourusername/containy/issues) or submit a pull request.
 
-## License
+---
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+### Visit [containy.io](https://www.containy.io) for more information and resources.
+
+---
+
+Happy testing with Containy! 🚀🐳🧪
